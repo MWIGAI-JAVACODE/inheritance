@@ -1,0 +1,21 @@
+class vehicle{
+  String brand;
+  int year;
+  
+vehicle(String brand,int year){
+    this.brand=brand;
+    this.year=year;
+}
+class car extends vehicle{
+ private int seats;
+
+vehicle(String brand,int year,int seats){
+   super(brand,year);
+   this.seats=seats;
+System.out.println("Brand"+brand);
+System.out.println("Year:"+year):
+System.out.println("seats:"+seats);
+
+class mycar{
+  car mycar=new car("Benz",2027,5);
+mycar.displaydetails();
