@@ -1,0 +1,37 @@
+import java util.scanner;
+class BankAccount{
+ protected double balance;
+public BankAccount(double balance){
+  this.balance=balance;
+}
+public void deposit(double amount){
+  balance=balance+amount;
+}
+public class SavingsAccount extends BankAccount{
+  public SavingAccount(double balance){
+    super(balance)
+}
+public void addinterest(){
+  balance=balance*0.05;
+}
+Public void displaydetails(){
+System.out.println("Final balance:"+balance);
+}
+}
+}
+class mainapp{
+public static void main(string[]args){
+SavingAccount savings=new SavingAccount();
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter the deposit")
+double amount=new.nextDouble;
+savings.deposit(amount);
+savings.addinterest();
+savings.displaybalance();
+input.close();
+}
+}
+
+
+
+
