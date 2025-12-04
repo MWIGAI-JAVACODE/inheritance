@@ -1,0 +1,45 @@
+import java.util.scanner;
+class Employee{
+   protected String name;
+   protected double salary;
+Public Employee(String name,Double salary){
+   this .name=name;
+   this.salary=salary;
+}
+Public void displayinfo(){
+  System.out.println("Name:"+name);
+  System.out.println("Salary:"+salary);
+}
+}
+class lecturer extends Employee{
+  private String department;
+public Lecturer (String name,double salary,string department){
+   super(name,salary);
+   this.department=department;
+}
+@override
+public void displayinfo(){
+  System.out.println("Department":department);
+}
+}
+class lec{
+ public static void main(string[]args){
+ Scanner scanner=new Scanner(System.in);
+
+System.out.println("Enter name:");
+String name=new.nextline;
+
+System.out.println("Enter salary");
+Double salary=new.nextDouble;
+
+System.Out .println("enter department");
+String department=new.nextline;
+
+Lecturer lec= new Lecturer(name,salary,department);
+lec.displayinfo();
+input.close();
+}
+}
+
+
+ 
